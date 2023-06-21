@@ -44,7 +44,7 @@ node {
 			  
            
             println('Hello from a Job DSL script!')
-            println(rmsg)
+            //println(rmsg)
         }
     }
 }
