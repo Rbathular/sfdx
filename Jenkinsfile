@@ -36,7 +36,7 @@ node {
 			
 			// need to pull out assigned username
 			if (isUnix()) {
-				rmsg = sh returnStdout: true, script: "${toolbelt} force:mdapi:deploy -d manifest/. --username ${HUB_ORG}"
+				rmsg = sh returnStdout: true, script: "${toolbelt} project deploy start -d manifest/. --username ${HUB_ORG}"
 				println('hello')
 			}else{
 			   rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -f HelloWorld.java --username ${HUB_ORG}"
