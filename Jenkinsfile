@@ -42,7 +42,7 @@ node {
 			   rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -f HelloWorld.java -u ${HUB_ORG}"
 			}
 			  
-            printf rmsg
+           
             println('Hello from a Job DSL script!')
             println(rmsg)
         }
