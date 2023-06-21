@@ -33,6 +33,8 @@ node {
             if (rc != 0) { error 'hub org authorization failed' }
 
 			println rc
+		        sh pwd
+                        sh ls -lrt
 			
 			// need to pull out assigned username
 			if (isUnix()) {
